@@ -1,0 +1,155 @@
+// Home
+.body-home {
+  background: url('../img/background-home.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+// Nav Home
+.navbar-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  &-logo {
+    float: left;
+    padding-top: 20px;
+  }
+  &-menu {
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        text-align: center;
+        padding: 20px;
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    } //End ul
+  } //End &-menu
+  &-btn {
+    text-align: right;
+  } //End &-btn
+} //End .navbar
+
+// Home
+#home {
+  padding: 90px;
+  h1 {
+    font-weight: 600;
+  }
+  .subscribe {
+    input {
+      padding: 13px 45px;
+      border: 1px solid $gray3-color;
+      background: $gray3-color;
+    }
+    a {
+      border-radius: 0;
+    }
+  } //End .subscribe
+  p {
+    width: 35%;
+  }
+} //End #home
+
+// Nav General
+.main-color {
+  background: $main-color;
+}
+.current {
+  text-decoration: underline;
+}
+
+.mainnavbar-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  &-logo {
+    float: left;
+    padding-top: 20px;
+    a,
+    a:visited {
+      color: #fff;
+    }
+  }
+  &-menu {
+    a,
+    a:visited {
+      color: #fff;
+    }
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        text-align: center;
+        padding: 20px;
+        a:hover {
+          text-decoration: underline;
+        }
+      } //End li
+    } //End ul
+  } //End &-menu
+  &-btn {
+    text-align: right;
+    a {
+      color: #000;
+    }
+  } //End &-btn
+} //End .navbar
+
+// Teachers
+#teachers {
+  text-align: center;
+  .teachers-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+    img {
+      width: 75%;
+      border-radius: 50%;
+    }
+  } //End .teachers-wrap
+} //End #teachers
+
+// About
+#about {
+  text-align: center;
+  .about-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    text-align: left;
+  } //End .about-wrap
+} //End #about
+
+// Register
+#register {
+  form {
+    display: block;
+    margin: 0 auto;
+    input {
+      background: $gray3-color;
+      border: 0;
+    }
+  } // End form
+} //End #register
+
+// Login
+#login {
+  form {
+    display: block;
+    margin: 0 auto;
+    input {
+      border: 0;
+      border-radius: 0;
+      border-bottom: 2px solid $gray1-color;
+    }
+  } //End form
+} //End #login
+
+// Footer 
+#mainfooter {
+  background: $secondary-color;
+  color: #fff;
+}
